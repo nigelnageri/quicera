@@ -1,0 +1,18 @@
+.nav-wrapper{
+    opacity: 1;
+    overflow-x: hidden;
+    background-color: transparent;
+    color: black;
+
+}
+.nav-link{
+    transition: 1s;
+}
+.nav-link:hover{
+    color: black;
+}
+.container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+}

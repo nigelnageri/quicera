@@ -1,0 +1,441 @@
+/*masterstyles*/
+html,body{
+    margin: 0 ;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    background:black;
+    scroll-behavior: smooth;
+}
+@media only screen and (max-width: 600px) {
+    html,body {
+        background-color: black;
+    }
+    .container{
+        background-color: black;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background:black;
+}
+/*navstyles*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    color: grey;
+    background: black;
+}
+.leftside{
+    display: flex;
+}
+.nav-wrapper > .leftside > div {
+     margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+ }
+ .rightside > div {
+    margin-left: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.nav-link{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 1s;
+}
+.nav-link a {
+    color: grey;
+    text-decoration: none;
+    transition: 1s;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #228b22;
+}
+.nav-link a :hover {
+    color: forestgreen;
+}
+ span{
+     color: forestgreen;
+ }
+ .active-nav-link  {
+      border-bottom: 1px solid forestgreen;
+  }
+.active-nav-link a  {
+    color: forestgreen !important;
+}
+
+/*portfolio styles*/
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-img-background{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-item-wrapper:hover{
+
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    transition: background-color 1s;
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.img-text-wrapper:hover{
+    background-color: black;
+    opacity: 80%;
+}
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+/*be more specific with selector*/
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: forestgreen;
+    font-size: large;
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+/*email style*/
+.email-div{
+    background:black;
+    color: forestgreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    font-size: 1.5em;
+}
+
+
+.email-content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+h2{
+    font-size: 1.25em;
+}
+.button {
+    background-color: transparent;
+    border: 1px solid forestgreen;
+    color: forestgreen;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+.button:hover{
+    background-color: forestgreen;
+    color: black;
+
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid forestgreen;
+    background: silver;
+    color: black;
+}
+/*final item*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #000;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/*about us*/
+hr{
+    color: white;
+    height: 1px;
+    margin: 0;
+}
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background: black;
+    color: forestgreen;
+}
+.profile-image-wrapper{
+width: 100%;
+}
+.profile-content-wrapper{
+    padding: 30px ;
+}
+/*row of quicera*/
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    background: black;
+}
+.col-sm-6{
+    background: black;
+    color: forestgreen;
+    padding: 20px;
+}
+footer{
+    background: #000;
+    color: grey;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*@media*/
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .container {
+        width: 80%;
+        padding: 0;
+    }
+    .right {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+        width: 100%;
+    }}
+/*signup form styles*/
+
+.button{
+    background-color: transparent;
+    border: 1px solid forestgreen;
+    color: forestgreen;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: transparent;
+    color: forestgreen;
+    border: 1px solid forestgreen;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    transition: 1s;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+    background-color: forestgreen;
+    color: black;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: red;
+    color: black;
+    border: none;
+    transition: 1s;
+}
+.signupbtn{
+    padding: 14px 20px;
+    background-color: forestgreen;
+    color: black;
+    border: none;
+    transition: 1s;
+}
+.signupbtn:hover{
+    color: white;
+}
+.cancelbtn:hover{
+    background-color: red;
+    color: white;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+    background-color:black;
+    color:white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white;
+    padding-top: 50px;
+    opacity: 0.8;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: none;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: forestgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    opacity:0.9;
+}
+
+input[type=submit]:hover {
+    background-color: forestgreen;
+    opacity:1;
+}
+
+.container {
+    border-radius: 1px;
+    background-color: black;
+    padding: 20px;
+    color:white;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.contact-container:hover{
+    opacity: 0.9;
+}
+@media (max-width: 600px) {
+    html,body,.container {
+        width: 100%;
+    }}
+/*custom select boxes*/
